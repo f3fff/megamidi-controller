@@ -1,0 +1,177 @@
+{
+  "name": "Kawai K1 MKII",
+  "manufacturer": "Kawai",
+  "model": "K1 MKII",
+  "default_channel": 0,
+  "patches": {
+    "single": {
+      "SinA.1": "0x00",
+      "SinA.2": "0x01",
+      "SinA.3": "0x02",
+      "SinA.4": "0x03",
+      "SinA.5": "0x04",
+      "SinA.6": "0x05",
+      "SinA.7": "0x06",
+      "SinA.8": "0x07",
+      "SinB.1": "0x08",
+      "SinB.2": "0x09",
+      "SinB.3": "0x0A",
+      "SinB.4": "0x0B",
+      "SinB.5": "0x0C",
+      "SinB.6": "0x0D",
+      "SinB.7": "0x0E",
+      "SinB.8": "0x0F",
+      "SinC.1": "0x10",
+      "SinC.2": "0x11",
+      "SinC.3": "0x12",
+      "SinC.4": "0x13",
+      "SinC.5": "0x14",
+      "SinC.6": "0x15",
+      "SinC.7": "0x16",
+      "SinC.8": "0x17",
+      "SinD.1": "0x18",
+      "SinD.2": "0x19",
+      "SinD.3": "0x1A",
+      "SinD.4": "0x1B",
+      "SinD.5": "0x1C",
+      "SinD.6": "0x1D",
+      "SinD.7": "0x1E",
+      "SinD.8": "0x1F"
+    },
+    "multi": {
+      "MulA.1": "0x40",
+      "MulA.2": "0x41",
+      "MulA.3": "0x42",
+      "MulA.4": "0x43",
+      "MulA.5": "0x44",
+      "MulA.6": "0x45",
+      "MulA.7": "0x46",
+      "MulA.8": "0x47",
+      "MulB.1": "0x48",
+      "MulB.2": "0x49",
+      "MulB.3": "0x4A",
+      "MulB.4": "0x4B",
+      "MulB.5": "0x4C",
+      "MulB.6": "0x4D",
+      "MulB.7": "0x4E",
+      "MulB.8": "0x4F",
+      "MulC.1": "0x50",
+      "MulC.2": "0x51",
+      "MulC.3": "0x52",
+      "MulC.4": "0x53",
+      "MulC.5": "0x54",
+      "MulC.6": "0x55",
+      "MulC.7": "0x56",
+      "MulC.8": "0x57",
+      "MulD.1": "0x58",
+      "MulD.2": "0x59",
+      "MulD.3": "0x5A",
+      "MulD.4": "0x5B",
+      "MulD.5": "0x5C",
+      "MulD.6": "0x5D",
+      "MulD.7": "0x5E",
+      "MulD.8": "0x5F"
+    }
+  },
+  "effects": {
+    "StHallRev": {
+      "code": "0x60",
+      "description": "Stereo Concert Hall Reverb"
+    },
+    "MoHallRev": {
+      "code": "0x61",
+      "description": "Mono Concert Hall Reverb"
+    },
+    "ShortPlateRev": {
+      "code": "0x62",
+      "description": "Short Plate Reverb"
+    },
+    "LargeRoomRev": {
+      "code": "0x63",
+      "description": "Large Room Reverb"
+    },
+    "SmallRoomRev": {
+      "code": "0x64",
+      "description": "Small Room Reverb"
+    },
+    "EarlyRef1": {
+      "code": "0x65",
+      "description": "First Reflection Reverb - Long Predelay, Short Decay"
+    },
+    "DelayedHallRev": {
+      "code": "0x66",
+      "description": "Hall Reverb with aprox 300ms pre-delay"
+    },
+    "EarlyRef2": {
+      "code": "0x67",
+      "description": "Smooth version of #6"
+    },
+    "StereoDelay": {
+      "code": "0x68",
+      "description": "Independent Delay with feedback - Left: 230ms, Right: 320ms"
+    },
+    "PanDelay1": {
+      "code": "0x69",
+      "description": "Panning Delay with feedback - aprox 240ms"
+    },
+    "PanDelay2": {
+      "code": "0x6A",
+      "description": "Panning Delay with feedback - aprox 300ms"
+    },
+    "Delay1": {
+      "code": "0x6B",
+      "description": "Delay with feedback - aprox 230ms"
+    },
+    "Delay2": {
+      "code": "0x6C",
+      "description": "Delay with feedback - aprox 500ms"
+    },
+    "Delay3": {
+      "code": "0x6D",
+      "description": "Short Single delay - aprox 40ms"
+    },
+    "Delay4": {
+      "code": "0x6E",
+      "description": "Single Right-channel Delay - aprox 360ms"
+    },
+    "RandomDelay": {
+      "code": "0x6F",
+      "description": "Stereo delay with varying time and level for each repeat"
+    }
+  },
+  "controllers": {
+    "modulation_wheel": {
+      "cc_number": 1,
+      "min_value": 0,
+      "max_value": 127,
+      "default_value": 0
+    },
+    "data_entry": {
+      "cc_number": 6,
+      "min_value": 0,
+      "max_value": 127,
+      "default_value": 0
+    },
+    "hold_pedal": {
+      "cc_number": 40,
+      "min_value": 0,
+      "max_value": 127,
+      "default_value": 0,
+      "on_value": 127,
+      "off_value": 0
+    }
+  },
+  "special_functions": {
+    "sysex_id": "0x40",
+    "commands": {
+      "request_patch": {
+        "description": "Solicita datos del patch actual",
+        "format": "F0 40 00 01 00 02 F7"
+      },
+      "dump_patch": {
+        "description": "Envía datos del patch actual",
+        "format": "F0 40 00 01 20 F7"
+      }
+    }
+  }
+}
